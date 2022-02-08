@@ -1,0 +1,6 @@
+spring:
+  cache:
+    type: caffeine
+    cache-names: posts
+    caffeine:
+      spec: maximumSize=500, expireAfterAccess=60s
